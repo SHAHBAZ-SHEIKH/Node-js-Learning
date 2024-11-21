@@ -1,0 +1,24 @@
+# Express
+Express js is a minimal flexible web application Framework fornode  js.
+Express.js ek web application framework hai jo Node.js ke upar kaam karta hai. Ye developers ko web applications aur APIs banane ke liye ek simple aur structured tareeka provide karta hai.
+
+# Express.js Ki Zarurat Kyun Hoti Hai?
+Node.js khud ek JavaScript runtime hai, lekin isme kuch common features jaise routing, HTTP requests aur responses ka management, aur middleware ka system nahi diya hota. Express.js in sab cheezon ka solution deta hai, aur development ko easy aur fast banata hai.
+
+# Routing
+Ye alag-alag HTTP methods (GET, POST, PUT, DELETE) aur URLs ke liye routes banane ka powerful system provide karta hai.
+
+# Middleware
+Middleware functions request aur response ko handle karte hain. Authentication, logging, aur data parsing jese kaam middleware ki madad se easily ho jate hain.
+
+# Static Files:
+Express.js static files jaise HTML, CSS, aur images ko serve karne ke liye easy configuration deta hai.
+
+# Template Engine Support:
+Express.js dynamic web pages banane ke liye EJS, Pug, aur Handlebars jaise template engines ke saath kaam kar sakta hai.
+
+# HTTP Utilities:
+Express.js request aur response handle karne ke liye utility methods deta hai jaise res.json(), res.send(), aur res.status().
+
+# Database Integration:
+Ye databases jaise MongoDB, MySQL, aur PostgreSQL ke saath easily integrate ho jata hai libraries jaise mongoose ya sequelize ke through.
