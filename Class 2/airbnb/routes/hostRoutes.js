@@ -11,6 +11,9 @@ const rootDir = require("../utils/pathUtils");
 
 
 
+
+
+
 hostRouter.get("/host/add-home",(req, res, next)=>{
     res.sendFile(path.join(rootDir,"views","addHome.html"))
 })

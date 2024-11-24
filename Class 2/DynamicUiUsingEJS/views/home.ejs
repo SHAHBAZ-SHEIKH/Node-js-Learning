@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home airbnb</title>
+    <link rel="stylesheet" href="/output.css">
+  </head>
+  <body>
+    <%-include("partial/Header.ejs")%>
+    <main class="mt-[20px] text-center bg-white shadow-2xl p-[40px] w-[30%]  conatiner mx-auto">
+      <h1 class="text-xl text-black font-bold">Here are our registered Homes:</h1>
+      <!-- <ul class="list-disc list-inside space-y-2">
+        <% registerHome.forEach(home => { %>
+        <li class="text-gray-700 hover:text-red-500 transition-colors duration-100">
+          <%= home.ownerHome %>
+        </li>
+        <% }) %>
+
+
+      </ul> -->
+      <% registerHome.forEach(home => { %>
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden mt-6 mx-auto">
+          <!-- Image Section -->
+          <img class="w-full h-48 object-cover" src="<%= home.ownerImage %>" alt="<%= home.ownerHome %>">
+          
+          <!-- Content Section -->
+          <div class="p-6">
+            <!-- Home Title -->
+            <h2 class="text-lg font-bold text-gray-800 mb-2">
+              <%= home.ownerHome %>
+            </h2>
+            <!-- Location -->
+            <p class="text-sm text-gray-600 mb-4">
+              Location: <span class="font-medium text-gray-700"><%= home.ownerLocation %></span>
+            </p>
+            <!-- Price -->
+            <p class="text-sm text-gray-600 mb-4">
+              Price: <span class="font-medium text-green-600">$<%= home.ownerPrice %></span>
+            </p>
+          </div>
+          
+          
+        </div>
+      <% }) %>
+      
+      
+    </main>
+  </body>
+</html>

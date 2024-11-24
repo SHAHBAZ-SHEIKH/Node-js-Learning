@@ -7,9 +7,6 @@ const express = require('express');
 const path = require("path");
 
 
-
-
-
 // Local Modules
 
 const userRouter = require("./routes/userRoutes");
@@ -17,6 +14,8 @@ const hostRouter = require("./routes/hostRoutes");
 const rootDir = require("./utils/pathUtils");
 
 const app = express();
+
+app.use(express.static(path.join(rootDir,"public",)))
 
 
 
@@ -34,7 +33,7 @@ app.use((req, res, next) => {
 
 
 
-
-app.listen(3001, () => {
-    console.log("Server is running on port 3000");
+const PORT = 3000
+app.listen(PORT, () => {
+    console.log(`server is running on port http://localhost:${PORT}`)
 });
