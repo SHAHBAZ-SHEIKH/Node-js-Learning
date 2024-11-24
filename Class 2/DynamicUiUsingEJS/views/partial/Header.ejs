@@ -1,0 +1,13 @@
+<header class="bg-red-500 p-6 w-full text-white">
+    <nav class="container mx-auto">
+      <ul class="flex justify-start gap-4">
+        <li class="text-white text-2xl <%= currentPage === 'home' ? 'text-blue-900 ' : 'text-yellow-500' %>">
+          <a  href="/" >Go To Home</a>
+          <%= console.log(currentPage) %>
+        </li>
+        <li class="text-white text-2xl">
+          <a href="/host/add-home" class="<%= currentPage === 'addHome' ? 'text-blue-900' : 'text-yellow-500' %>">Add Home</a>
+        </li>
+      </ul>
+    </nav>
+  </header>

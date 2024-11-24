@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css">
+  </head>
+  <body>
+    <%-include("partial/Header.ejs")%>
+
+    <main class="mt-[20px] text-center bg-white shadow-2xl p-[40px] w-[50%]   container mx-auto ">
+      <h1 class="text-2xl text-black font-bold">Add your Home here</h1>
+      <div class="mt-[20px] w-[100%]">
+        <form action="/host/add-home" method="POST" class="flex flex-col gap-4">
+          <input class="border p-[10px] mb-[5px]" type="text" name="name" placeholder="Enter Your Name" />
+          <input class="border p-[10px] " type="number" name="Price" placeholder="Enter Your Price" />
+          <input class="border p-[10px]" type="text" name="Location" placeholder="Enter Your Location" />
+          <input class="border p-[10px]" type="text" name="Image" placeholder="Enter Your Home Image" />
+          <input class="p-[10px] border-[1px] bg-red-500 text-white border-[solid] border-[red] cursor-pointer" type="submit" />
+        </form>
+      </div>
+    </main>
+
+    <!-- <main>
+      <form action="/host/add-home" method="POST">
+        <input type="text" name="name" placeholder="Enter Your Name" />
+        <input type="submit" />
+      </form>
+    </main> -->
+    
+  </body>
+</html>
